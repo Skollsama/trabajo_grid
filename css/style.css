@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+}
+
+/* ajustes del contenedor */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 5vh 91vh 4vh;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+/* ajustes del header */
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c698d;
+}
+
+.header h1 {
+    color: #ffffff;
+}
+/* ajustes del main */
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #e3f6f5;
+}
+
+.main h1, p {
+    font-size: 2em;
+}
+/* ajuste de tamaño de imagenes */
+
+.aside img {
+    width: 500px;
+    height: 500px;
+}
+
+/* ajustes de los productos */
+.pro {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro h1, p {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: cadetblue;
+
+}
+
+/* ajustes de aside */
+.aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1%;
+    justify-items: center;
+    align-items: center;
+}
+/* ajustes de footer */
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bae8e8;
+}
+
+.footer h1 {
+    color: #ffffff;
+}
